@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutterxfirebase/services/auth.dart';
 
-class SignIn extends StatefulWidget {
+class Register extends StatefulWidget {
   @override
-  _SignInState createState() => _SignInState();
+  _RegisterState createState() => _RegisterState();
 }
 
-class _SignInState extends State<SignIn> {
+class _RegisterState extends State<Register> {
   final AuthService _auth = AuthService();
 
   //text field state
@@ -20,7 +20,7 @@ class _SignInState extends State<SignIn> {
       appBar: AppBar(
         backgroundColor: Colors.brown[400],
         elevation: 0.0,
-        title: Text('Sign in to Health Setter Health'),
+        title: Text('Register to Health Setter Health'),
       ),
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 15.0),
@@ -44,7 +44,7 @@ class _SignInState extends State<SignIn> {
               RaisedButton(
                 color: Colors.pink[400],
                 child: Text(
-                  'Sign In',
+                  'Register',
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () async {
